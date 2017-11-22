@@ -1,11 +1,16 @@
+#**Finding Lane Lines on the Road** 
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
 # Semantic Segmentation
 ### Introduction
-This project relies on a pre-trained vgg model altered to be a Fully Convolutional Network (FCN) in order to label the pixels of a road in images using pre-labeled training data.  Upsampling of convlutional layers, combined with skip layers allow the FCN to maintain spacial information, unlike regular convolutional networks.
+This project relies on a pre-trained vgg model altered to be a Fully Convolutional Network (FCN) in order to label the pixels of a road in a series of images.  Upsampling of convlutional layers combined with skip layers allow the FCN to maintain spacial information, unlike regular convolutional networks.
 
 The model follows the design employed in the paper Fully Convolutional Networks for Semantic Segmentation[1](https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf) by Jonathan Long, Evan Shelhamer and
-Trevor Darrell.  In this paper, an FCN is used to provide per-pixel labeling.  From the Introduction: "Both learning and inference are performed whole-image-at-a-time by dense feedforward computation and backpropagation."
+Trevor Darrell.  In this paper, an FCN is used to provide per-pixel labeling by training on labeled image data and then relying on inference to speed up the labeling process.  From the Introduction: "Both learning and inference are performed whole-image-at-a-time by dense feedforward computation and backpropagation."
 
-By importing the trained vgg network and adding skip layers and upsampling to it, we can rapidly train an FCN without needing to design the entire network from scratch.
+By importing the trained vgg network and adding upsampling and skip layers to it, we can rapidly train an FCN without needing to design the entire network from scratch.
+
+<img src="um_000007.png" width="480" alt="Combined Image" />
 
 ### Setup
 ##### Frameworks and Packages
