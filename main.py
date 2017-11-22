@@ -188,7 +188,7 @@ def run():
         # Get batches
         get_batches_fn = helper.gen_batch_function(os.path.join(data_dir, 'data_road/training'), image_shape)
 
-        epochs = 40
+        epochs = 35
         batches = 5
 
         # Build the network
