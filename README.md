@@ -35,8 +35,8 @@ To submit this project, the following targets were met:
 	b. Does the project learn the correct features from the images?  The project does appear to learn the correct features, as loss rate declaines over time and the output images show the road surface marked in green.
 	c. Does the project optimize the neural network?  The project uses the AdamOptimizer to search for minimum loss.
 	d. Does the project train the neural network?  The train_nn function is implimented, and the loss measure is printed during training.
-	e. Does the project train the model correctly?  On avergae, loss does decrease over time.
-	f. Does the project use reasonable hyperparameters?  Batch is set to 5, and epochs is set to 40.
+	e. Does the project train the model correctly?  On avergae, loss does decrease over time.  The final loss is roughly 0.04.
+	f. Does the project use reasonable hyperparameters?  Batch is set to 5, and epochs is set to 35.
 	g. Does the project correctly label the road?  The accuracy of the output images is petty good, though there is still room for improvement.
 3. The following files are included here in this repo:
  - `helper.py`
